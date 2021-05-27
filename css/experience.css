@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.main_photo img {
+    height: 1000px;
+}
+
+.content_link h3 {
+    top: -20px;
+}
+
+.water_fall {
+    background-image: url(../img/waterfall.jpg);
+    background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 540px) {
+    .main_content .content_link, .main_content_reverse .content_link {
+        top: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main_content .content_link h3{
+        top: -10px;
+    }
+
+    .main_photo img {
+        height: 450px;
+    }
+}

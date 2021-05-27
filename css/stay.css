@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+.normal h3::before {
+    top: 45px;
+}
+
+.normal h3::after {
+    top: 34px;
+}
+
+.emphasize1{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.emphasize2{
+    font-size: 24px;
+}
+
+.sai_outer {
+    background-image: url(../img/sai_outer.jpg);
+    background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 768px) {
+    .emphasize2 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .main_content {
+        margin-bottom: 100px;
+    }
+
+    .main_content_reverse .content_description {
+        top: -200px;
+        margin-top: 0;
+    }
+
+    .main_content_reverse .content_wrapper {
+        height: 840px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .main_content {
+        margin-bottom: 100px;
+    }
+    .main_content_reverse, .main_content_reverse .content_wrapper{
+        height: 740px;
+    }
+
+    .main_content_reverse .content_description h2 {
+        padding-left: 25px;
+    }
+
+    .main_content_reverse .content_description p {
+        padding-left: 35px;
+    }
+}

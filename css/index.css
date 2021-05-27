@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+.topmain:not(.view) {
+    display: none;
+}
+
+.top_main_group {
+    position: relative;
+    width: 800px;
+    height: 600px;
+}
+
+.topmain{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.main_content_last .content_link {
+    height: 250px;  
+    padding: 170px 0 0 140px; 
+    margin: 0 auto 0 50px;
+}
+
+.main_content_last .content_img {
+    height: 400px;
+    width: 630px;
+    position: relative;
+    left: 0px;
+}
+
+.main_content_last .content_link h3::before {
+    left: -50px;
+}
+
+.main_content_last .content_link h3::after {
+    left: 273px;
+}
+
+.main_content_last .content_copy{
+    margin: 50px auto;
+} 
+
+.main_content_last .content_copy_border::before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    background: none;
+} 
+
+@media screen and (max-width: 1024px) {
+    .main_content_last .content_wrapper {
+        display: block;
+    }
+    
+    .main_content_last .content_right {
+        top: 0;
+        left: 100px;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main_content_last .content_left {
+        width: 100%;
+    }
+
+    .main_content_last .content_img {
+        text-align-last: center;
+    }
+    
+    .main_content_last .content_right {
+        top: 0;
+        left: 100px;
+        width: 50%;
+    }
+
+    .main_content_last .content_link {
+        padding: 60px 0 0 0 ;
+    }
+
+    .main_content_last .content_copy {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    .main_content_last .content_wrapper {
+        height: 400px;
+    }
+
+    .main_content_last .content_img {
+        width: 80%;
+        height: 300px;
+    }
+
+    .main_content_last .content_right {
+        width: 85%;
+        left: 0;
+        top: -100px;
+    }
+
+    .main_content_last .content_link {
+        left: 0;
+        margin: 0 auto;
+        padding-left: 80px;
+    }
+
+    .main_content_last .content_copy {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main_content_last .content_link{
+        padding-left: 0px;
+    }
+
+    .main_content_last .content_link h3 {
+        margin-left: 65px;
+    }
+
+    .main_content_last .content_link h3::before {
+        left: -45px;
+    }
+    .main_content_last .content_link h3::after {
+        left: 198px;
+    }
+
+    .main_content_last .content_img {
+        height: 240px;
+    }
+}

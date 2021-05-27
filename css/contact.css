@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+.top {
+    margin-bottom: 150px;
+}
+
+.top_description {
+    margin-top: 50px;
+    line-height: 1.8;
+}
+
+.tel p {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+input, textarea, select {
+    border: 1px solid black;
+    padding: 5px 15px;
+    width: 75%;
+}
+
+label {
+    padding: 5px 0;
+}
+
+button {
+    background-color: white;
+    border: 2px solid #1b9df0;
+    color: #1b9df0;
+    font-size: 36px;
+    padding: 10px 50px;
+    display: block;
+    margin: 100px auto 0 auto;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color:#1b9df0;
+    color: white;
+}
+
+.contact {
+    width: 700px;
+    margin: 70px auto 0 auto;
+}
+
+.contact_form {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.contact_form label {
+    width: 25%;
+}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 768px) {
+    .top_description {
+        width: 85vw;
+        margin: 0 auto;
+    }
+
+    .contact_form label {
+        width: 30%;
+    }
+    
+    input, textarea, select {
+        width: 70%;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        width: 100%;
+    }
+
+    .contact_form label {
+        font-size: 14px;
+    }
+        
+    input, textarea, select {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    .top_description {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .top_copy {
+        font-size: 22px;
+    }
+
+    .tel p {
+        font-size: 22px;
+    }
+
+    input, textarea, select {
+        font-size: 14px;
+        padding-left: 5px;
+    }
+}
